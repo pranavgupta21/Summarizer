@@ -1,0 +1,23 @@
+KeyWord Extractor
+	This part takes a POS Tagged piece of text and generates the keywords that describe the entire text.
+
+C. KEYWORD EXTRACTOR
+--------------------
+
+1. preparing input : 
+	a) make a file named input (or change the name accordingly in trun.sh).
+	b) Write the total number of words in the first line.
+	c) In the second line, write the pos tagged input; the separator of the actual word and POS Tag being an underscore (_) (or change the MACRO 'TAG_SEPARATOR' in the file vertex.h)
+	
+	NOTE : The POS Tagger above writes such an output on the standard error stream.
+
+2. To recompile and run the KeyWord Extractor, use the following command:
+	
+	sh trun.sh
+	
+****THE MAKEFILE PROVIDED HAS VARIOUS USEFUL TARGETS:
+-----------------------------------------------------
+
+1. txsm_clean : removes all the object files of the KeyWord Extractor
+2. txsm_install : recompiles the KeyWord Extractor
+
